@@ -68,6 +68,8 @@
 		EBB19D231B7B1B920049867D /* LearnSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB19D221B7B1B920049867D /* LearnSwift.swift */; };
 		EBC28F471B720BF1000FF951 /* ZYObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC28F461B720BF1000FF951 /* ZYObject.m */; };
 		EBC2CE711B7C2897007D0FB1 /* AnimationCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC2CE701B7C2897007D0FB1 /* AnimationCellViewController.m */; };
+		EBC2CEA51B7CA025007D0FB1 /* CycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC2CEA21B7CA025007D0FB1 /* CycleScrollView.m */; };
+		EBC2CEA61B7CA025007D0FB1 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC2CEA41B7CA025007D0FB1 /* NSTimer+Addition.m */; };
 		EBC43FCF1B6B04A60046CD77 /* PresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC43FCE1B6B04A60046CD77 /* PresentedViewController.m */; };
 		EBDEF0761B747D03005EA5F0 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDEF0751B747D03005EA5F0 /* DrawView.m */; };
 		EBDEF0791B747D2E005EA5F0 /* ZYDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDEF0781B747D2E005EA5F0 /* ZYDrawViewController.m */; };
@@ -202,6 +204,10 @@
 		EBC28F461B720BF1000FF951 /* ZYObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYObject.m; sourceTree = "<group>"; };
 		EBC2CE6F1B7C2897007D0FB1 /* AnimationCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationCellViewController.h; sourceTree = "<group>"; };
 		EBC2CE701B7C2897007D0FB1 /* AnimationCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationCellViewController.m; sourceTree = "<group>"; };
+		EBC2CEA11B7CA025007D0FB1 /* CycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleScrollView.h; sourceTree = "<group>"; };
+		EBC2CEA21B7CA025007D0FB1 /* CycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleScrollView.m; sourceTree = "<group>"; };
+		EBC2CEA31B7CA025007D0FB1 /* NSTimer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
+		EBC2CEA41B7CA025007D0FB1 /* NSTimer+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Addition.m"; sourceTree = "<group>"; };
 		EBC43FCD1B6B04A50046CD77 /* PresentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentedViewController.h; sourceTree = "<group>"; };
 		EBC43FCE1B6B04A60046CD77 /* PresentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentedViewController.m; sourceTree = "<group>"; };
 		EBDEF0741B747D03005EA5F0 /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
@@ -422,6 +428,7 @@
 				EBB19D1C1B7AD46A0049867D /* UIViewController+PanGesturePop.h */,
 				EBB19D1D1B7AD46A0049867D /* UIViewController+PanGesturePop.m */,
 				EB07AF7B1AE6127300FDAFDD /* Main.storyboard */,
+				EBC2CEA01B7CA025007D0FB1 /* 循环 scrollerView */,
 				EBC2CE981B7C7AC8007D0FB1 /* tableView */,
 				EB2509461B783FE700CF86C6 /* setting */,
 				EBDEF0881B7495A4005EA5F0 /* runtime */,
@@ -560,6 +567,17 @@
 				EBC2CE701B7C2897007D0FB1 /* AnimationCellViewController.m */,
 			);
 			name = tableView;
+			sourceTree = "<group>";
+		};
+		EBC2CEA01B7CA025007D0FB1 /* 循环 scrollerView */ = {
+			isa = PBXGroup;
+			children = (
+				EBC2CEA11B7CA025007D0FB1 /* CycleScrollView.h */,
+				EBC2CEA21B7CA025007D0FB1 /* CycleScrollView.m */,
+				EBC2CEA31B7CA025007D0FB1 /* NSTimer+Addition.h */,
+				EBC2CEA41B7CA025007D0FB1 /* NSTimer+Addition.m */,
+			);
+			path = "循环 scrollerView";
 			sourceTree = "<group>";
 		};
 		EBDEF0731B747D03005EA5F0 /* draw */ = {
@@ -771,6 +789,8 @@
 				EB0219F11B670FD400A66288 /* SVPViewController.m in Sources */,
 				EB25093B1B783EC900CF86C6 /* BOOptionTableViewCell.m in Sources */,
 				EB021A021B67201700A66288 /* MailTableCell.m in Sources */,
+				EBC2CEA61B7CA025007D0FB1 /* NSTimer+Addition.m in Sources */,
+				EBC2CEA51B7CA025007D0FB1 /* CycleScrollView.m in Sources */,
 				EBAEFE8A1B74361400482F28 /* PictureBrowseViewController.m in Sources */,
 				EB07AF7A1AE6127300FDAFDD /* ViewController.m in Sources */,
 				EB2509451B783ED600CF86C6 /* TableViewController.m in Sources */,
