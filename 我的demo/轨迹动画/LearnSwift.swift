@@ -215,6 +215,17 @@ class LearnSwift: UIViewController {
 //    let result = 3 * number
 //    return result
 //    })
+    
+    
+//    let greeting = "Guten Tag"
+//    print(greeting.startIndex)
+//    // 0
+//    print(greeting.endIndex)
+//    // 9
+////    你可以通过下表来获得String对应位置的Character：
+//    
+//    greeting[greeting.startIndex]
+//    // G
 }
 
 
