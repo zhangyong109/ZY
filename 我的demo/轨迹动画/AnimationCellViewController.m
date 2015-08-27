@@ -11,7 +11,6 @@
     
     
 }
-@property (nonatomic,strong)UITableView * tableView;
 @property (nonatomic,strong)NSMutableArray * dataArray;
 
 
@@ -20,13 +19,14 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-    [self addPanGesturePopVC];
+//    [self addPanGesturePopVC];
     
     self.dataArray = [NSMutableArray array];
     for (int i = 0; i < 30; i ++) {
         [self.dataArray addObject:[NSString stringWithFormat:@"cell:%d",i]];
     }
-    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, MAINSCREENWIDTH, MAINSCREENHEIGHT)];
+    self.tableView = [[UITableView alloc]initWithFrame:self.view.bounds];
+
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;

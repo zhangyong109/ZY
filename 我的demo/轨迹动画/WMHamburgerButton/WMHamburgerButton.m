@@ -8,6 +8,9 @@
 
 #import "WMHamburgerButton.h"
 
+#define   dY  5
+
+
 @interface WMHamburgerButton ()
 @property (nonatomic, strong) CALayer *topLayer;
 @property (nonatomic, strong) CALayer *middleLayer;
@@ -18,11 +21,13 @@
     CGFloat _hamburgerHeight;
     CGFloat _hamburgerWidth;
     CGFloat _hamburgerLayerHeight;
+    
 }
 @synthesize selected = _selected;
 
 - (void)setLineHeight:(CGFloat)lineHeight {
     _lineHeight = lineHeight;
+
     [self layoutSubviews];
 }
 
@@ -50,13 +55,13 @@
     CGFloat cornerRadius =  _hamburgerLayerHeight / 2.0;
     
     self.topLayer.cornerRadius = cornerRadius;
-    self.topLayer.frame = CGRectMake(0, CGRectGetMinY(self.bounds), _hamburgerWidth, _hamburgerLayerHeight);
+    self.topLayer.frame = CGRectMake(0, CGRectGetMinY(self.bounds) + dY, _hamburgerWidth, _hamburgerLayerHeight);
     
     self.middleLayer.cornerRadius = cornerRadius;
     self.middleLayer.frame = CGRectMake(0, CGRectGetMidY(self.bounds)-(_hamburgerLayerHeight/2), _hamburgerWidth, _hamburgerLayerHeight);
     
     self.bottomLayer.cornerRadius = cornerRadius;
-    self.bottomLayer.frame = CGRectMake(0, CGRectGetMaxY(self.bounds)-_hamburgerLayerHeight, _hamburgerWidth, _hamburgerLayerHeight);
+    self.bottomLayer.frame = CGRectMake(0, CGRectGetMaxY(self.bounds)-_hamburgerLayerHeight - dY, _hamburgerWidth, _hamburgerLayerHeight);
 }
 
 - (void)setup {
@@ -105,12 +110,12 @@
     CAKeyframeAnimation *topRotation = [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation"];
     topRotation.values = @[@(M_PI_4), @(-0.1), @0];
     topRotation.calculationMode = kCAAnimationCubic;
-    topRotation.keyTimes = @[@0, @0.73, @1.0];
+//    topRotation.keyTimes = @[@0, @0.73, @1.0];
     CAKeyframeAnimation *topPosition = [CAKeyframeAnimation animationWithKeyPath:@"position"];
     NSValue *startP = [NSValue valueWithCGPoint:CGPointMake(_hamburgerWidth / 2.0, _hamburgerHeight / 2.0)];
-    NSValue *endP = [NSValue valueWithCGPoint:CGPointMake(_hamburgerWidth / 2.0, _hamburgerLayerHeight / 2.0)];
+    NSValue *endP = [NSValue valueWithCGPoint:CGPointMake(_hamburgerWidth / 2.0, _hamburgerLayerHeight / 2.0 + dY)];
     topPosition.values = @[startP, endP];
-    topPosition.keyTimes = @[@0, @0.73, @1.0];
+//    topPosition.keyTimes = @[@0, @0.73, @1.0];
     
     CAAnimationGroup *topAnimations = [CAAnimationGroup animation];
     topAnimations.animations = @[topRotation, topPosition];
@@ -129,12 +134,12 @@
     CAKeyframeAnimation *bottomRotation = [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation"];
     bottomRotation.values = @[@(-M_PI_4), @(0.1), @0];
     bottomRotation.calculationMode = kCAAnimationCubic;
-    bottomRotation.keyTimes = @[@0, @0.73, @1.0];
+//    bottomRotation.keyTimes = @[@0, @0.73, @1.0];
     CAKeyframeAnimation *bottomPosition = [CAKeyframeAnimation animationWithKeyPath:@"position"];
     startP = [NSValue valueWithCGPoint:CGPointMake(_hamburgerWidth / 2.0, _hamburgerHeight / 2.0)];
-    endP = [NSValue valueWithCGPoint:CGPointMake(_hamburgerWidth / 2.0, _hamburgerHeight - _hamburgerLayerHeight / 2.0)];
+    endP = [NSValue valueWithCGPoint:CGPointMake(_hamburgerWidth / 2.0, _hamburgerHeight - _hamburgerLayerHeight / 2.0 - dY)];
     bottomPosition.values = @[startP, endP];
-    bottomPosition.keyTimes = @[@0, @0.73, @1.0];
+//    bottomPosition.keyTimes = @[@0, @0.73, @1.0];
     
     CAAnimationGroup *bottomAnimations = [CAAnimationGroup animation];
     bottomAnimations.animations = @[bottomRotation, bottomPosition];
@@ -175,7 +180,7 @@
     startP = [NSValue valueWithCGPoint:CGPointMake(_hamburgerWidth / 2.0, _hamburgerHeight - _hamburgerLayerHeight / 2.0)];
     endP = [NSValue valueWithCGPoint:CGPointMake(_hamburgerWidth / 2.0, _hamburgerHeight / 2.0)];
     bottomPosition.values = @[startP, endP];
-    bottomPosition.keyTimes = @[@0, @0.73, @1.0];
+//    bottomPosition.keyTimes = @[@0, @0.73, @1.0];
     
     CAAnimationGroup *bottomAnimations = [CAAnimationGroup animation];
     bottomAnimations.animations = @[bottomRotation, bottomPosition];

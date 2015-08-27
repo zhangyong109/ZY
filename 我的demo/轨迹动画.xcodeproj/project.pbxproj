@@ -62,6 +62,10 @@
 		EB856DCF1B5F9ADF0024152C /* ZYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB856DCE1B5F9ADF0024152C /* ZYViewController.m */; };
 		EBA8EB281B549B550022B3C7 /* libTelephonyIOKitDynamic.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA8EB271B549B550022B3C7 /* libTelephonyIOKitDynamic.dylib */; };
 		EBA8EB2A1B54A13E0022B3C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA8EB291B54A13E0022B3C7 /* CoreGraphics.framework */; };
+		EBA8FBA31B8D557E00E2640F /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA8FBA21B8D557E00E2640F /* Test.m */; };
+		EBAA72741B8EE2D3006AB2C5 /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAA72711B8EE2D3006AB2C5 /* ContainerViewController.m */; };
+		EBAA72751B8EE2D3006AB2C5 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAA72731B8EE2D3006AB2C5 /* PageViewController.m */; };
+		EBAA72781B8EE37A006AB2C5 /* ZYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAA72771B8EE37A006AB2C5 /* ZYTableViewController.m */; };
 		EBAEFE8A1B74361400482F28 /* PictureBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAEFE891B74361400482F28 /* PictureBrowseViewController.m */; };
 		EBAEFE8C1B7436CF00482F28 /* ImageInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBAEFE8B1B7436CF00482F28 /* ImageInfo.plist */; };
 		EBB19D1E1B7AD46A0049867D /* UIViewController+PanGesturePop.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB19D1D1B7AD46A0049867D /* UIViewController+PanGesturePop.m */; };
@@ -71,9 +75,11 @@
 		EBC2CEA51B7CA025007D0FB1 /* CycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC2CEA21B7CA025007D0FB1 /* CycleScrollView.m */; };
 		EBC2CEA61B7CA025007D0FB1 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC2CEA41B7CA025007D0FB1 /* NSTimer+Addition.m */; };
 		EBC43FCF1B6B04A60046CD77 /* PresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC43FCE1B6B04A60046CD77 /* PresentedViewController.m */; };
+		EBC5FB671B8C03EB002AA151 /* WMHamburgerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5FB661B8C03EB002AA151 /* WMHamburgerButton.m */; };
 		EBDEF0761B747D03005EA5F0 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDEF0751B747D03005EA5F0 /* DrawView.m */; };
 		EBDEF0791B747D2E005EA5F0 /* ZYDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDEF0781B747D2E005EA5F0 /* ZYDrawViewController.m */; };
 		EBDEF0811B748B5F005EA5F0 /* test-path.txt in Resources */ = {isa = PBXBuildFile; fileRef = EBDEF0801B748B5F005EA5F0 /* test-path.txt */; };
+		EBDFB79A1B84541900AD917C /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDFB7991B84541900AD917C /* UINavigationController+FDFullscreenPopGesture.m */; };
 		EBEC50361B69AB3200B78467 /* BaseAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEC50211B69AB3200B78467 /* BaseAnimator.m */; };
 		EBEC50371B69AB3200B78467 /* DismissAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEC50231B69AB3200B78467 /* DismissAnimator.m */; };
 		EBEC50381B69AB3200B78467 /* RootNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEC50271B69AB3200B78467 /* RootNavigationViewController.m */; };
@@ -193,6 +199,14 @@
 		EB856DCE1B5F9ADF0024152C /* ZYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYViewController.m; sourceTree = "<group>"; };
 		EBA8EB271B549B550022B3C7 /* libTelephonyIOKitDynamic.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTelephonyIOKitDynamic.dylib; path = usr/lib/libTelephonyIOKitDynamic.dylib; sourceTree = SDKROOT; };
 		EBA8EB291B54A13E0022B3C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EBA8FBA11B8D557E00E2640F /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		EBA8FBA21B8D557E00E2640F /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		EBAA72701B8EE2D3006AB2C5 /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
+		EBAA72711B8EE2D3006AB2C5 /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
+		EBAA72721B8EE2D3006AB2C5 /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		EBAA72731B8EE2D3006AB2C5 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		EBAA72761B8EE37A006AB2C5 /* ZYTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTableViewController.h; sourceTree = "<group>"; };
+		EBAA72771B8EE37A006AB2C5 /* ZYTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTableViewController.m; sourceTree = "<group>"; };
 		EBAEFE881B74361400482F28 /* PictureBrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureBrowseViewController.h; sourceTree = "<group>"; };
 		EBAEFE891B74361400482F28 /* PictureBrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureBrowseViewController.m; sourceTree = "<group>"; };
 		EBAEFE8B1B7436CF00482F28 /* ImageInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ImageInfo.plist; sourceTree = "<group>"; };
@@ -210,11 +224,15 @@
 		EBC2CEA41B7CA025007D0FB1 /* NSTimer+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Addition.m"; sourceTree = "<group>"; };
 		EBC43FCD1B6B04A50046CD77 /* PresentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentedViewController.h; sourceTree = "<group>"; };
 		EBC43FCE1B6B04A60046CD77 /* PresentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentedViewController.m; sourceTree = "<group>"; };
+		EBC5FB651B8C03EB002AA151 /* WMHamburgerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMHamburgerButton.h; sourceTree = "<group>"; };
+		EBC5FB661B8C03EB002AA151 /* WMHamburgerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMHamburgerButton.m; sourceTree = "<group>"; };
 		EBDEF0741B747D03005EA5F0 /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
 		EBDEF0751B747D03005EA5F0 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
 		EBDEF0771B747D2E005EA5F0 /* ZYDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDrawViewController.h; sourceTree = "<group>"; };
 		EBDEF0781B747D2E005EA5F0 /* ZYDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDrawViewController.m; sourceTree = "<group>"; };
 		EBDEF0801B748B5F005EA5F0 /* test-path.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "test-path.txt"; sourceTree = "<group>"; };
+		EBDFB7981B84541900AD917C /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		EBDFB7991B84541900AD917C /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		EBEC50201B69AB3200B78467 /* BaseAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAnimator.h; sourceTree = "<group>"; };
 		EBEC50211B69AB3200B78467 /* BaseAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAnimator.m; sourceTree = "<group>"; };
 		EBEC50221B69AB3200B78467 /* DismissAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissAnimator.h; sourceTree = "<group>"; };
@@ -420,14 +438,21 @@
 		EB07AF701AE6127300FDAFDD /* 轨迹动画 */ = {
 			isa = PBXGroup;
 			children = (
+				EB07AF7B1AE6127300FDAFDD /* Main.storyboard */,
 				EB07AF751AE6127300FDAFDD /* AppDelegate.h */,
 				EB07AF761AE6127300FDAFDD /* AppDelegate.m */,
+				EBAA72761B8EE37A006AB2C5 /* ZYTableViewController.h */,
+				EBAA72771B8EE37A006AB2C5 /* ZYTableViewController.m */,
 				EB856DCD1B5F9ADF0024152C /* ZYViewController.h */,
 				EB856DCE1B5F9ADF0024152C /* ZYViewController.m */,
+				EBA8FBA11B8D557E00E2640F /* Test.h */,
+				EBA8FBA21B8D557E00E2640F /* Test.m */,
 				EBB19D221B7B1B920049867D /* LearnSwift.swift */,
 				EBB19D1C1B7AD46A0049867D /* UIViewController+PanGesturePop.h */,
 				EBB19D1D1B7AD46A0049867D /* UIViewController+PanGesturePop.m */,
-				EB07AF7B1AE6127300FDAFDD /* Main.storyboard */,
+				EBAA726F1B8EE2D3006AB2C5 /* ContainerViewController */,
+				EBC5FB641B8C03EB002AA151 /* WMHamburgerButton */,
+				EBDFB7971B84541900AD917C /* 全屏滑动 */,
 				EBC2CEA01B7CA025007D0FB1 /* 循环 scrollerView */,
 				EBC2CE981B7C7AC8007D0FB1 /* tableView */,
 				EB2509461B783FE700CF86C6 /* setting */,
@@ -560,6 +585,17 @@
 			name = animations;
 			sourceTree = "<group>";
 		};
+		EBAA726F1B8EE2D3006AB2C5 /* ContainerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EBAA72701B8EE2D3006AB2C5 /* ContainerViewController.h */,
+				EBAA72711B8EE2D3006AB2C5 /* ContainerViewController.m */,
+				EBAA72721B8EE2D3006AB2C5 /* PageViewController.h */,
+				EBAA72731B8EE2D3006AB2C5 /* PageViewController.m */,
+			);
+			path = ContainerViewController;
+			sourceTree = "<group>";
+		};
 		EBC2CE981B7C7AC8007D0FB1 /* tableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -578,6 +614,15 @@
 				EBC2CEA41B7CA025007D0FB1 /* NSTimer+Addition.m */,
 			);
 			path = "循环 scrollerView";
+			sourceTree = "<group>";
+		};
+		EBC5FB641B8C03EB002AA151 /* WMHamburgerButton */ = {
+			isa = PBXGroup;
+			children = (
+				EBC5FB651B8C03EB002AA151 /* WMHamburgerButton.h */,
+				EBC5FB661B8C03EB002AA151 /* WMHamburgerButton.m */,
+			);
+			path = WMHamburgerButton;
 			sourceTree = "<group>";
 		};
 		EBDEF0731B747D03005EA5F0 /* draw */ = {
@@ -609,6 +654,15 @@
 				EBC28F461B720BF1000FF951 /* ZYObject.m */,
 			);
 			name = runtime;
+			sourceTree = "<group>";
+		};
+		EBDFB7971B84541900AD917C /* 全屏滑动 */ = {
+			isa = PBXGroup;
+			children = (
+				EBDFB7981B84541900AD917C /* UINavigationController+FDFullscreenPopGesture.h */,
+				EBDFB7991B84541900AD917C /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = "全屏滑动";
 			sourceTree = "<group>";
 		};
 		EBEC501F1B69AB3200B78467 /* 转场动画 */ = {
@@ -788,6 +842,7 @@
 				EB021A0D1B67217300A66288 /* TestData.m in Sources */,
 				EB0219F11B670FD400A66288 /* SVPViewController.m in Sources */,
 				EB25093B1B783EC900CF86C6 /* BOOptionTableViewCell.m in Sources */,
+				EBC5FB671B8C03EB002AA151 /* WMHamburgerButton.m in Sources */,
 				EB021A021B67201700A66288 /* MailTableCell.m in Sources */,
 				EBC2CEA61B7CA025007D0FB1 /* NSTimer+Addition.m in Sources */,
 				EBC2CEA51B7CA025007D0FB1 /* CycleScrollView.m in Sources */,
@@ -797,14 +852,18 @@
 				EBEC50381B69AB3200B78467 /* RootNavigationViewController.m in Sources */,
 				EBEC503A1B69AB3200B78467 /* UIImageView+Init.m in Sources */,
 				EBEC503C1B69AB3200B78467 /* UIView+SetRect.m in Sources */,
+				EBA8FBA31B8D557E00E2640F /* Test.m in Sources */,
 				EB0219D91B670E3700A66288 /* SVIndefiniteAnimatedView.m in Sources */,
 				EBEC50361B69AB3200B78467 /* BaseAnimator.m in Sources */,
 				EB0219FD1B671FDD00A66288 /* MGSwipeTableCellViewController.m in Sources */,
 				EBEC503F1B69AB3200B78467 /* PushAnimator.m in Sources */,
 				EB2509411B783EC900CF86C6 /* BOTimeTableViewCell.m in Sources */,
+				EBDFB79A1B84541900AD917C /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				EB856DC51B5F486B0024152C /* ZYBlock2ViewController.m in Sources */,
 				EB2509391B783EC900CF86C6 /* BOButtonTableViewCell.m in Sources */,
+				EBAA72741B8EE2D3006AB2C5 /* ContainerViewController.m in Sources */,
 				EBEC503D1B69AB3200B78467 /* PopAnimator.m in Sources */,
+				EBAA72751B8EE2D3006AB2C5 /* PageViewController.m in Sources */,
 				EB25093A1B783EC900CF86C6 /* BOChoiceTableViewCell.m in Sources */,
 				EBEC50451B69AB8400B78467 /* BaseViewController.m in Sources */,
 				EBC28F471B720BF1000FF951 /* ZYObject.m in Sources */,
@@ -812,6 +871,7 @@
 				EB07AF771AE6127300FDAFDD /* AppDelegate.m in Sources */,
 				EBEC503E1B69AB3200B78467 /* PresentAnimator.m in Sources */,
 				EB0219F91B671F3E00A66288 /* MGSwipeButton.m in Sources */,
+				EBAA72781B8EE37A006AB2C5 /* ZYTableViewController.m in Sources */,
 				EB07AF741AE6127300FDAFDD /* main.m in Sources */,
 				EBDEF0761B747D03005EA5F0 /* DrawView.m in Sources */,
 				EB0219FA1B671F3E00A66288 /* MGSwipeTableCell.m in Sources */,

@@ -28,53 +28,36 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithRed:0.6 green:0.8 blue:0.9 alpha:1];
-    self.navigationItem.title = @"hh";
+    self.navigationItem.title = @"测试";
     
     [self addPanGesturePopVC];
     
-    //runtime iphone6上有问题
-    //    [self testOCRunTime];
-    //runtime
-    [self getClassNameAndPropertyName];
+    WMHamburgerButton * wm = [[WMHamburgerButton alloc]initWithFrame:CGRectMake(10, 320, 30, 30)];
+    [self.view addSubview:wm];
     
+    [self checkDeviceShake];
+    
+    //runtime
+    [Test getClassNameAndPropertyName];
+    
+    __weak NSString *str1 = @"wwww".lowercaseString;
+    __weak NSString *str2;
+    str2 = @"wwww".lowercaseString;
+    NSLog(@"--%@--%@",str1,str2);
+}
+
+#pragma mark - method
+-(void)downloadedImage{
     /**
      *  TableView中实现平滑滚动延迟加载图片利用CFRunLoopMode的特性，可以将图片的加载放到NSDefaultRunLoopMode的mode里，这样在滚动UITrackingRunLoopMode这个mode时不会被加载而影响到。
      */
     UIImage *downloadedImage;
     [[[UIImageView alloc]initWithImage:downloadedImage] performSelector:@selector(setImage:)
-                               withObject:downloadedImage
-                               afterDelay:0
-                                  inModes:@[NSDefaultRunLoopMode]];
-    
-    
+                                                             withObject:downloadedImage
+                                                             afterDelay:0
+                                                                inModes:@[NSDefaultRunLoopMode]];
 }
 
--(void)getClassNameAndPropertyName{
-    // 获取所有加载的Objective-C框架和动态库的名称
-    const char ** objc_copyImageNames ( unsigned int *outCount );
-    // 获取指定类所在动态库
-    const char * class_getImageName (Class cls );
-    // 获取指定库或框架中所有类的类名
-    const char ** objc_copyClassNamesForImage ( const char *image, unsigned int *outCount );
-    NSLog(@"获取指定类所在动态库");
-    NSLog(@"UIView's Framework: %s", class_getImageName(NSClassFromString(@"PictureBrowseViewController")));
-    NSLog(@"获取指定库或框架中所有类的类名");
-    unsigned int outCount = 0;
-    const char ** classes = objc_copyClassNamesForImage(class_getImageName(NSClassFromString(@"PictureBrowseViewController")), &outCount);
-    for (int i = 0; i < outCount; i++) {
-        NSLog(@"class name: %s", classes[i]);
-    }
-    objc_property_t * properties = class_copyPropertyList(NSClassFromString(@"PictureBrowseViewController"), &outCount);
-    
-    for (int i = 0; i < outCount; i++) {
-        objc_property_t property = properties[i];
-        
-        NSString *propertyName = [[NSString alloc] initWithCString:property_getName(property) encoding:NSUTF8StringEncoding];
-        NSLog(@"propertyName: %@", propertyName);
-        
-        
-    }
-}
 - (IBAction)jump:(id)sender {
     [self jumpToOtherAPP];
     

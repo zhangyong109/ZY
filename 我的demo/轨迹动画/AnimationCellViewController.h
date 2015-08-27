@@ -13,5 +13,6 @@
 #define MAINSCREENHEIGHT        [UIScreen mainScreen].bounds.size.height
 @interface AnimationCellViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
+@property (nonatomic,strong)UITableView * tableView;
 
 @end

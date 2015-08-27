@@ -10,14 +10,18 @@
 #import "ZYObject.h"
 #import "PictureBrowseViewController.h"
 #import "UIViewController+PanGesturePop.h"
+#import "WMHamburgerButton.h"
+#import "Test.h"
 
 @interface ZYViewController : UIViewController<UIGestureRecognizerDelegate>
 @property (strong, nonatomic) UIImageView *imageView;
 @property (copy, nonatomic)  NSString *str1;
 
--(void)www;
--(void)www1;
--(void)www2;
--(void)www3;
+
+
+//-(void)www;
+//-(void)www1;
+//-(void)www2;
+//-(void)www3;
 
 @end
