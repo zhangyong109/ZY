@@ -25,16 +25,17 @@ class LearnSwift: UIViewController {
     //MARK: - 简单值
     func simpleValue() {
         
-        var lkasd = 1
-        var df = 3
-        var kf = lkasd + df
-        var eee = qwe + String(df)
+//        let lkasd = 1
+//        let df = 3
+//        var kf = lkasd + df
+//        var eee = qwe + String(df)
+//        
+//        
+//        let apples = 3
+//        let oranges = 5
         
-        
-        let apples = 3
-        let oranges = 5
-        let appleSummary = "I have \(apples) apples."
-        let fruitSummary = "I have \(apples + oranges) pieces of fruit."
+//        let appleSummary = "I have \(apples) apples."
+//        let fruitSummary = "I have \(apples + oranges) pieces of fruit."
         
         var shoppingList = ["catfish", "water", "tulips", "blue paint"]
         shoppingList[1] = "bottle of water"
@@ -43,7 +44,7 @@ class LearnSwift: UIViewController {
             "Kaylee": "Mechanic",
         ]
         occupations["Jayne"] = "Public Relations"
-        print(occupations)
+        print(occupations, terminator: "")
         
         
         let individualScores = [75, 43, 103, 87, 12]
@@ -55,32 +56,36 @@ class LearnSwift: UIViewController {
                 teamScore += 1
             }
         }
-        print(teamScore)
+        print(teamScore, terminator: "")
         
         
-        var optionalString: String? = "Hello"
-        print(optionalString == nil)
+        let optionalString: String? = "Hello"
+        print(optionalString == nil, terminator: "")
         
-        var optionalName: String? = nil
-        var greeting = "Hello!"
-        if let name = optionalName {
-            greeting = "Hello, \(name)"
-        }else{
-            greeting = "Hello, www"
-        }
-        
+//        let optionalName: String? = nil
+//        var greeting = "Hello!"
+//        if let name = optionalName {
+//            greeting = "Hello, \(name)"
+//        } else {
+//            greeting = "Hello, www"
+//        }
+//        
         
         let vegetable = "red pepper"
         switch vegetable {
         case "celery":
             let vegetableComment = "Add some raisins and make ants on a log."
+            vegetableComment
         case "cucumber", "watercress":
             let vegetableComment = "That would make a good tea sandwich."
+            vegetableComment
         case let x where x.hasSuffix("pepper"):
             let vegetableComment = "Is it a spicy \(x)?"
+            vegetableComment
             
         default:
             let vegetableComment = "Everything tastes good in soup."
+            vegetableComment
         }
         
         
@@ -96,23 +101,25 @@ class LearnSwift: UIViewController {
                     largest = number
                 }
             }
+           kind
         }
+        
         //        使用while来重复运行一段代码直到不满足条件。循环条件也可以在结尾，保证能至少循环一次。
         
         var n = 2
         while n < 100 {
             n = n * 2
         }
-        print(n)
+        print(n, terminator: "")
         
         var m = 2
         
         
         //repeat
-        do {
+        repeat {
             m = m * 2
         } while m < 100
-        print(m)
+        print(m, terminator: "")
         
         //        你可以在循环中使用..<来表示范围，也可以使用传统的写法，两者是等价的：
         //        使用..<创建的范围不包含上界，如果想包含的话需要使用...
@@ -123,13 +130,13 @@ class LearnSwift: UIViewController {
         for i in 0..<4 {
             firstForLoop += i
         }
-        print(firstForLoop)
+        print(firstForLoop, terminator: "")
         
         var secondForLoop = 0
         for var i = 0; i < 4; ++i {
             secondForLoop += i
         }
-        print(secondForLoop)
+        print(secondForLoop, terminator: "")
         
     }
     
@@ -140,19 +147,19 @@ class LearnSwift: UIViewController {
         
         
         let statistics = calculateStatistics([5, 3, 100, 3, 9])
-        print(statistics.sum)
-        print(statistics.2)
-        let qq = statistics.2
-        let qq1 = statistics.sum
-        let qq2 = statistics.1
-        let qq3 = statistics.0
+        print(statistics.sum, terminator: "")
+        print(statistics.2, terminator: "")
+//        let qq = statistics.2
+//        let qq1 = statistics.sum
+//        let qq2 = statistics.1
+//        let qq3 = statistics.0
         
         
-        var qq4 = sumOf()
-        var qq5 = sumOf(42, 597, 12)
+//        var qq4 = sumOf()
+//        var qq5 = sumOf(42, 597, 12)
         
         
-        var increment = makeIncrementer()
+        let increment = makeIncrementer()
         increment(7)
     }
     //    使用func来声明一个函数，使用名字和参数来调用函数。使用->来指定函数返回值的类型。

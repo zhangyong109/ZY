@@ -1,0 +1,29 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6B5A1B0FB0AC6EB907F545DF3F4D06BB6CAE3583" : 0,
+    "11AFB4D0907C28D67403860E96D6385F4770A13F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D0FD7C07-680E-4BAF-B347-25E9E1CED4F6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6B5A1B0FB0AC6EB907F545DF3F4D06BB6CAE3583" : "",
+    "11AFB4D0907C28D67403860E96D6385F4770A13F" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "轨迹动画",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "轨迹动画.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/hyzx\/Desktop\/%E6%88%91%E7%9A%84demo",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "11AFB4D0907C28D67403860E96D6385F4770A13F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zhangyong109\/ZY.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6B5A1B0FB0AC6EB907F545DF3F4D06BB6CAE3583"
+    }
+  ]
+}

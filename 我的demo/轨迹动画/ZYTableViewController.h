@@ -11,6 +11,9 @@
 #import "ContainerViewController.h"
 #import "PageViewController.h"
 #import "AnimationCellViewController.h"
+#import "ZYImageTableViewController.h"
+#import "AutolayoutScrollViewController.h"
+#import "ZYScrollViewController.h"
 
 @interface ZYTableViewController : UITableViewController
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56A68103767D7B58BE6BEB10 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EF9BFB44F2DC28C17B6B3DF /* libPods.a */; };
 		EB0219C51B670D6F00A66288 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB0219C11B670D6F00A66288 /* image1.jpg */; };
 		EB0219C61B670D6F00A66288 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB0219C21B670D6F00A66288 /* image2.jpg */; };
 		EB0219C71B670D6F00A66288 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB0219C31B670D6F00A66288 /* image3.jpg */; };
@@ -60,6 +61,8 @@
 		EB856DC51B5F486B0024152C /* ZYBlock2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB856DC41B5F486B0024152C /* ZYBlock2ViewController.m */; };
 		EB856DCB1B5F83CD0024152C /* ZYImageProcessingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB856DCA1B5F83CD0024152C /* ZYImageProcessingViewController.m */; };
 		EB856DCF1B5F9ADF0024152C /* ZYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB856DCE1B5F9ADF0024152C /* ZYViewController.m */; };
+		EBA061F51BB393C500D41C0C /* AutolayoutScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA061F41BB393C500D41C0C /* AutolayoutScrollViewController.m */; settings = {ASSET_TAGS = (); }; };
+		EBA061F81BB3C99700D41C0C /* ZYScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA061F71BB3C99700D41C0C /* ZYScrollViewController.m */; settings = {ASSET_TAGS = (); }; };
 		EBA8EB281B549B550022B3C7 /* libTelephonyIOKitDynamic.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA8EB271B549B550022B3C7 /* libTelephonyIOKitDynamic.dylib */; };
 		EBA8EB2A1B54A13E0022B3C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA8EB291B54A13E0022B3C7 /* CoreGraphics.framework */; };
 		EBA8FBA31B8D557E00E2640F /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA8FBA21B8D557E00E2640F /* Test.m */; };
@@ -70,11 +73,17 @@
 		EBAEFE8C1B7436CF00482F28 /* ImageInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBAEFE8B1B7436CF00482F28 /* ImageInfo.plist */; };
 		EBB19D1E1B7AD46A0049867D /* UIViewController+PanGesturePop.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB19D1D1B7AD46A0049867D /* UIViewController+PanGesturePop.m */; };
 		EBB19D231B7B1B920049867D /* LearnSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB19D221B7B1B920049867D /* LearnSwift.swift */; };
+		EBB302F31BAF9A04005AC780 /* UIDevices.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB302F21BAF9A04005AC780 /* UIDevices.m */; settings = {ASSET_TAGS = (); }; };
+		EBB302F91BAFDC32005AC780 /* CoreFoundations.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB302F81BAFDC32005AC780 /* CoreFoundations.m */; settings = {ASSET_TAGS = (); }; };
 		EBC28F471B720BF1000FF951 /* ZYObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC28F461B720BF1000FF951 /* ZYObject.m */; };
 		EBC2CE711B7C2897007D0FB1 /* AnimationCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC2CE701B7C2897007D0FB1 /* AnimationCellViewController.m */; };
 		EBC2CEA51B7CA025007D0FB1 /* CycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC2CEA21B7CA025007D0FB1 /* CycleScrollView.m */; };
 		EBC2CEA61B7CA025007D0FB1 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC2CEA41B7CA025007D0FB1 /* NSTimer+Addition.m */; };
 		EBC43FCF1B6B04A60046CD77 /* PresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC43FCE1B6B04A60046CD77 /* PresentedViewController.m */; };
+		EBC5EFB41B9D2E7800838D74 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5EFB31B9D2E7800838D74 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EBC5EFC21B9D908600838D74 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5EFBD1B9D908600838D74 /* UINavigationBar+Awesome.m */; };
+		EBC5EFC31B9D908600838D74 /* ZYImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5EFBF1B9D908600838D74 /* ZYImageTableViewCell.m */; };
+		EBC5EFC41B9D908600838D74 /* ZYImageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5EFC11B9D908600838D74 /* ZYImageTableViewController.m */; };
 		EBC5FB671B8C03EB002AA151 /* WMHamburgerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5FB661B8C03EB002AA151 /* WMHamburgerButton.m */; };
 		EBDEF0761B747D03005EA5F0 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDEF0751B747D03005EA5F0 /* DrawView.m */; };
 		EBDEF0791B747D2E005EA5F0 /* ZYDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDEF0781B747D2E005EA5F0 /* ZYDrawViewController.m */; };
@@ -108,6 +117,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		336034E89354F2E9DADC575A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		78AE9FF0CC5EDFAE936617F0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8EF9BFB44F2DC28C17B6B3DF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB0219C11B670D6F00A66288 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image1.jpg; path = images/image1.jpg; sourceTree = "<group>"; };
 		EB0219C21B670D6F00A66288 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image2.jpg; path = images/image2.jpg; sourceTree = "<group>"; };
 		EB0219C31B670D6F00A66288 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image3.jpg; path = images/image3.jpg; sourceTree = "<group>"; };
@@ -197,6 +209,10 @@
 		EB856DCA1B5F83CD0024152C /* ZYImageProcessingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYImageProcessingViewController.m; sourceTree = "<group>"; };
 		EB856DCD1B5F9ADF0024152C /* ZYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYViewController.h; sourceTree = "<group>"; };
 		EB856DCE1B5F9ADF0024152C /* ZYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYViewController.m; sourceTree = "<group>"; };
+		EBA061F31BB393C500D41C0C /* AutolayoutScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutolayoutScrollViewController.h; sourceTree = "<group>"; };
+		EBA061F41BB393C500D41C0C /* AutolayoutScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutolayoutScrollViewController.m; sourceTree = "<group>"; };
+		EBA061F61BB3C99700D41C0C /* ZYScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYScrollViewController.h; sourceTree = "<group>"; };
+		EBA061F71BB3C99700D41C0C /* ZYScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYScrollViewController.m; sourceTree = "<group>"; };
 		EBA8EB271B549B550022B3C7 /* libTelephonyIOKitDynamic.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTelephonyIOKitDynamic.dylib; path = usr/lib/libTelephonyIOKitDynamic.dylib; sourceTree = SDKROOT; };
 		EBA8EB291B54A13E0022B3C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		EBA8FBA11B8D557E00E2640F /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
@@ -214,6 +230,10 @@
 		EBB19D1D1B7AD46A0049867D /* UIViewController+PanGesturePop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PanGesturePop.m"; sourceTree = "<group>"; };
 		EBB19D1F1B7B1A040049867D /* 轨迹动画-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "轨迹动画-Bridging-Header.h"; sourceTree = "<group>"; };
 		EBB19D221B7B1B920049867D /* LearnSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnSwift.swift; sourceTree = "<group>"; };
+		EBB302F11BAF9A04005AC780 /* UIDevices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDevices.h; sourceTree = "<group>"; };
+		EBB302F21BAF9A04005AC780 /* UIDevices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDevices.m; sourceTree = "<group>"; };
+		EBB302F71BAFDC32005AC780 /* CoreFoundations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreFoundations.h; sourceTree = "<group>"; };
+		EBB302F81BAFDC32005AC780 /* CoreFoundations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreFoundations.m; sourceTree = "<group>"; };
 		EBC28F451B720BF1000FF951 /* ZYObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYObject.h; sourceTree = "<group>"; };
 		EBC28F461B720BF1000FF951 /* ZYObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYObject.m; sourceTree = "<group>"; };
 		EBC2CE6F1B7C2897007D0FB1 /* AnimationCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationCellViewController.h; sourceTree = "<group>"; };
@@ -224,6 +244,14 @@
 		EBC2CEA41B7CA025007D0FB1 /* NSTimer+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Addition.m"; sourceTree = "<group>"; };
 		EBC43FCD1B6B04A50046CD77 /* PresentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentedViewController.h; sourceTree = "<group>"; };
 		EBC43FCE1B6B04A60046CD77 /* PresentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentedViewController.m; sourceTree = "<group>"; };
+		EBC5EFB21B9D2E7800838D74 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		EBC5EFB31B9D2E7800838D74 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		EBC5EFBC1B9D908600838D74 /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+Awesome.h"; path = "zyImageVC/UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
+		EBC5EFBD1B9D908600838D74 /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+Awesome.m"; path = "zyImageVC/UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
+		EBC5EFBE1B9D908600838D74 /* ZYImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYImageTableViewCell.h; path = zyImageVC/ZYImageTableViewCell.h; sourceTree = "<group>"; };
+		EBC5EFBF1B9D908600838D74 /* ZYImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYImageTableViewCell.m; path = zyImageVC/ZYImageTableViewCell.m; sourceTree = "<group>"; };
+		EBC5EFC01B9D908600838D74 /* ZYImageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYImageTableViewController.h; path = zyImageVC/ZYImageTableViewController.h; sourceTree = "<group>"; };
+		EBC5EFC11B9D908600838D74 /* ZYImageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYImageTableViewController.m; path = zyImageVC/ZYImageTableViewController.m; sourceTree = "<group>"; };
 		EBC5FB651B8C03EB002AA151 /* WMHamburgerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMHamburgerButton.h; sourceTree = "<group>"; };
 		EBC5FB661B8C03EB002AA151 /* WMHamburgerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMHamburgerButton.m; sourceTree = "<group>"; };
 		EBDEF0741B747D03005EA5F0 /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
@@ -276,6 +304,7 @@
 				EB0219EC1B670F6B00A66288 /* UIKit.framework in Frameworks */,
 				EB0219EA1B670F6600A66288 /* QuartzCore.framework in Frameworks */,
 				EBA8EB2A1B54A13E0022B3C7 /* CoreGraphics.framework in Frameworks */,
+				56A68103767D7B58BE6BEB10 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +318,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C0A5D21C1129F94837F4B2E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				336034E89354F2E9DADC575A /* Pods.debug.xcconfig */,
+				78AE9FF0CC5EDFAE936617F0 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D7FCA11A296C1816A9D01006 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EF9BFB44F2DC28C17B6B3DF /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EB0219BD1B670CE700A66288 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -423,6 +469,8 @@
 				EB0219BE1B670CF400A66288 /* libs */,
 				EB07AF8A1AE6127300FDAFDD /* 轨迹动画Tests */,
 				EB07AF6F1AE6127300FDAFDD /* Products */,
+				9C0A5D21C1129F94837F4B2E /* Pods */,
+				D7FCA11A296C1816A9D01006 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -443,6 +491,10 @@
 				EB07AF761AE6127300FDAFDD /* AppDelegate.m */,
 				EBAA72761B8EE37A006AB2C5 /* ZYTableViewController.h */,
 				EBAA72771B8EE37A006AB2C5 /* ZYTableViewController.m */,
+				EBA061F31BB393C500D41C0C /* AutolayoutScrollViewController.h */,
+				EBA061F41BB393C500D41C0C /* AutolayoutScrollViewController.m */,
+				EBA061F61BB3C99700D41C0C /* ZYScrollViewController.h */,
+				EBA061F71BB3C99700D41C0C /* ZYScrollViewController.m */,
 				EB856DCD1B5F9ADF0024152C /* ZYViewController.h */,
 				EB856DCE1B5F9ADF0024152C /* ZYViewController.m */,
 				EBA8FBA11B8D557E00E2640F /* Test.h */,
@@ -450,21 +502,7 @@
 				EBB19D221B7B1B920049867D /* LearnSwift.swift */,
 				EBB19D1C1B7AD46A0049867D /* UIViewController+PanGesturePop.h */,
 				EBB19D1D1B7AD46A0049867D /* UIViewController+PanGesturePop.m */,
-				EBAA726F1B8EE2D3006AB2C5 /* ContainerViewController */,
-				EBC5FB641B8C03EB002AA151 /* WMHamburgerButton */,
-				EBDFB7971B84541900AD917C /* 全屏滑动 */,
-				EBC2CEA01B7CA025007D0FB1 /* 循环 scrollerView */,
-				EBC2CE981B7C7AC8007D0FB1 /* tableView */,
-				EB2509461B783FE700CF86C6 /* setting */,
-				EBDEF0881B7495A4005EA5F0 /* runtime */,
-				EBDEF0871B7494B7005EA5F0 /* pictureBrowse */,
-				EBDEF0731B747D03005EA5F0 /* draw */,
-				EBEC501F1B69AB3200B78467 /* 转场动画 */,
-				EB021A041B67202200A66288 /* MGS */,
-				EB0219F21B67137400A66288 /* SVP */,
-				EB856DCC1B5F9A0A0024152C /* animations */,
-				EB856DC81B5F83B00024152C /* ImageProcessing */,
-				EB856DB61B5F42870024152C /* block */,
+				EBC5EFB01B9D219C00838D74 /* all */,
 				EB072D4C1B539E3200318770 /* sources */,
 				EB07AF7E1AE6127300FDAFDD /* Images.xcassets */,
 				EB07AF801AE6127300FDAFDD /* LaunchScreen.xib */,
@@ -596,6 +634,17 @@
 			path = ContainerViewController;
 			sourceTree = "<group>";
 		};
+		EBB302F01BAF9A04005AC780 /* UIdevice */ = {
+			isa = PBXGroup;
+			children = (
+				EBB302F11BAF9A04005AC780 /* UIDevices.h */,
+				EBB302F21BAF9A04005AC780 /* UIDevices.m */,
+				EBB302F71BAFDC32005AC780 /* CoreFoundations.h */,
+				EBB302F81BAFDC32005AC780 /* CoreFoundations.m */,
+			);
+			path = UIdevice;
+			sourceTree = SOURCE_ROOT;
+		};
 		EBC2CE981B7C7AC8007D0FB1 /* tableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -614,6 +663,53 @@
 				EBC2CEA41B7CA025007D0FB1 /* NSTimer+Addition.m */,
 			);
 			path = "循环 scrollerView";
+			sourceTree = "<group>";
+		};
+		EBC5EFB01B9D219C00838D74 /* all */ = {
+			isa = PBXGroup;
+			children = (
+				EBB302F01BAF9A04005AC780 /* UIdevice */,
+				EBC5EFBB1B9D710300838D74 /* imageTableview */,
+				EBC5EFB11B9D2E7800838D74 /* json */,
+				EBAA726F1B8EE2D3006AB2C5 /* ContainerViewController */,
+				EBC5FB641B8C03EB002AA151 /* WMHamburgerButton */,
+				EBDFB7971B84541900AD917C /* 全屏滑动 */,
+				EBC2CEA01B7CA025007D0FB1 /* 循环 scrollerView */,
+				EBC2CE981B7C7AC8007D0FB1 /* tableView */,
+				EB2509461B783FE700CF86C6 /* setting */,
+				EBDEF0881B7495A4005EA5F0 /* runtime */,
+				EBDEF0871B7494B7005EA5F0 /* pictureBrowse */,
+				EBDEF0731B747D03005EA5F0 /* draw */,
+				EBEC501F1B69AB3200B78467 /* 转场动画 */,
+				EB021A041B67202200A66288 /* MGS */,
+				EB0219F21B67137400A66288 /* SVP */,
+				EB856DCC1B5F9A0A0024152C /* animations */,
+				EB856DC81B5F83B00024152C /* ImageProcessing */,
+				EB856DB61B5F42870024152C /* block */,
+			);
+			name = all;
+			sourceTree = "<group>";
+		};
+		EBC5EFB11B9D2E7800838D74 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				EBC5EFB21B9D2E7800838D74 /* JSONKit.h */,
+				EBC5EFB31B9D2E7800838D74 /* JSONKit.m */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		EBC5EFBB1B9D710300838D74 /* imageTableview */ = {
+			isa = PBXGroup;
+			children = (
+				EBC5EFC01B9D908600838D74 /* ZYImageTableViewController.h */,
+				EBC5EFC11B9D908600838D74 /* ZYImageTableViewController.m */,
+				EBC5EFBE1B9D908600838D74 /* ZYImageTableViewCell.h */,
+				EBC5EFBF1B9D908600838D74 /* ZYImageTableViewCell.m */,
+				EBC5EFBC1B9D908600838D74 /* UINavigationBar+Awesome.h */,
+				EBC5EFBD1B9D908600838D74 /* UINavigationBar+Awesome.m */,
+			);
+			name = imageTableview;
 			sourceTree = "<group>";
 		};
 		EBC5FB641B8C03EB002AA151 /* WMHamburgerButton */ = {
@@ -719,9 +815,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB07AF911AE6127300FDAFDD /* Build configuration list for PBXNativeTarget "轨迹动画" */;
 			buildPhases = (
+				74E73B10CC8DCDD5ECCC85D6 /* Check Pods Manifest.lock */,
 				EB07AF6A1AE6127300FDAFDD /* Sources */,
 				EB07AF6B1AE6127300FDAFDD /* Frameworks */,
 				EB07AF6C1AE6127300FDAFDD /* Resources */,
+				5200692082B009C4AE9E1E7B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -756,7 +854,9 @@
 		EB07AF661AE6127300FDAFDD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = ZY;
 				TargetAttributes = {
 					EB07AF6D1AE6127300FDAFDD = {
@@ -826,17 +926,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5200692082B009C4AE9E1E7B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74E73B10CC8DCDD5ECCC85D6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EB07AF6A1AE6127300FDAFDD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EBEC50391B69AB3200B78467 /* UIButton+inits.m in Sources */,
+				EBC5EFB41B9D2E7800838D74 /* JSONKit.m in Sources */,
+				EBC5EFC31B9D908600838D74 /* ZYImageTableViewCell.m in Sources */,
 				EBC43FCF1B6B04A60046CD77 /* PresentedViewController.m in Sources */,
 				EBB19D231B7B1B920049867D /* LearnSwift.swift in Sources */,
 				EBEC50441B69AB8400B78467 /* BaseNavigationViewController.m in Sources */,
 				EB072D4F1B539EA300318770 /* TransitionAndGroupAnimationViewController.m in Sources */,
 				EBB19D1E1B7AD46A0049867D /* UIViewController+PanGesturePop.m in Sources */,
+				EBA061F51BB393C500D41C0C /* AutolayoutScrollViewController.m in Sources */,
 				EB25093F1B783EC900CF86C6 /* BOTableViewController.m in Sources */,
 				EB021A031B67201700A66288 /* MailViewController.m in Sources */,
 				EB021A0D1B67217300A66288 /* TestData.m in Sources */,
@@ -870,6 +1006,7 @@
 				EBEC504C1B69AC3300B78467 /* RootViewController.m in Sources */,
 				EB07AF771AE6127300FDAFDD /* AppDelegate.m in Sources */,
 				EBEC503E1B69AB3200B78467 /* PresentAnimator.m in Sources */,
+				EBB302F91BAFDC32005AC780 /* CoreFoundations.m in Sources */,
 				EB0219F91B671F3E00A66288 /* MGSwipeButton.m in Sources */,
 				EBAA72781B8EE37A006AB2C5 /* ZYTableViewController.m in Sources */,
 				EB07AF741AE6127300FDAFDD /* main.m in Sources */,
@@ -878,9 +1015,12 @@
 				EBEC504E1B69AC3300B78467 /* ThirdViewController.m in Sources */,
 				EB25093D1B783EC900CF86C6 /* BOSwitchTableViewCell.m in Sources */,
 				EB856DB91B5F42B50024152C /* ZYBlockViewController.m in Sources */,
+				EBC5EFC41B9D908600838D74 /* ZYImageTableViewController.m in Sources */,
 				EB0219DB1B670E3700A66288 /* SVProgressHUD.m in Sources */,
 				EB2509401B783EC900CF86C6 /* BOTextTableViewCell.m in Sources */,
+				EBC5EFC21B9D908600838D74 /* UINavigationBar+Awesome.m in Sources */,
 				EBEC503B1B69AB3200B78467 /* UIView+GlowView.m in Sources */,
+				EBA061F81BB3C99700D41C0C /* ZYScrollViewController.m in Sources */,
 				EBDEF0791B747D2E005EA5F0 /* ZYDrawViewController.m in Sources */,
 				EBC2CE711B7C2897007D0FB1 /* AnimationCellViewController.m in Sources */,
 				EB25093C1B783EC900CF86C6 /* BOSetting.m in Sources */,
@@ -889,6 +1029,7 @@
 				EB25093E1B783EC900CF86C6 /* BOTableViewCell.m in Sources */,
 				EB856DCB1B5F83CD0024152C /* ZYImageProcessingViewController.m in Sources */,
 				EBEC504D1B69AC3300B78467 /* SecondViewController.m in Sources */,
+				EBB302F31BAF9A04005AC780 /* UIDevices.m in Sources */,
 				EB021A131B6721C400A66288 /* SpotifyViewController.m in Sources */,
 				EB856DCF1B5F9ADF0024152C /* ZYViewController.m in Sources */,
 			);
@@ -953,6 +1094,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1016,13 +1158,16 @@
 		};
 		EB07AF921AE6127300FDAFDD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 336034E89354F2E9DADC575A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				INFOPLIST_FILE = "轨迹动画/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ASD.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "轨迹动画/轨迹动画-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1032,13 +1177,16 @@
 		};
 		EB07AF931AE6127300FDAFDD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78AE9FF0CC5EDFAE936617F0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				INFOPLIST_FILE = "轨迹动画/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ASD.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "轨迹动画/轨迹动画-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1049,16 +1197,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "轨迹动画Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ASD.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/轨迹动画.app/轨迹动画";
 			};
@@ -1068,12 +1214,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "轨迹动画Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ASD.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/轨迹动画.app/轨迹动画";
 			};
