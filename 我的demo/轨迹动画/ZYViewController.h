@@ -12,6 +12,7 @@
 #import "UIViewController+PanGesturePop.h"
 #import "WMHamburgerButton.h"
 #import "Test.h"
+#import "ColorGradientView.h"
 
 @interface ZYViewController : UIViewController<UIGestureRecognizerDelegate>
 @property (strong, nonatomic) UIImageView *imageView;

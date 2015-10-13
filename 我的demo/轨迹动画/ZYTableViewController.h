@@ -14,6 +14,8 @@
 #import "ZYImageTableViewController.h"
 #import "AutolayoutScrollViewController.h"
 #import "ZYScrollViewController.h"
+#import "ZYCollectionCell.h"
+#import "HADirect.h"
 
 @interface ZYTableViewController : UITableViewController
 

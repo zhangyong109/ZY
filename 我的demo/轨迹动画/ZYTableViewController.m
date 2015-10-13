@@ -12,7 +12,7 @@
     
 }
 @property (nonatomic, strong) NSArray * dataArray;
-
+@property (nonatomic, strong) HADirect *direct;
 @end
 
 @implementation ZYTableViewController
@@ -20,11 +20,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    ZYCollectionCell *cell = [[ZYCollectionCell alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+    [self.view addSubview:cell];
+    
     _dataArray = @[@"ZYVC",
                    @"ContainerVC",
                    @"ZYImageTableViewController",
                    @"AutolayoutScrollView",
-                   @"ZYScrollViewController"
+                   @"ZYScrollViewController",
+                   @"HADirect-图片轮播"
                    ];
 }
 
@@ -62,46 +66,30 @@
     
     switch (indexPath.row) {
         case 0:{
-            UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-            ZYViewController *zyvc = (ZYViewController*)[storyboard instantiateViewControllerWithIdentifier:@"ZYViewController"];
-            [self.navigationController pushViewController:zyvc animated:YES];
+            [self pushToZYViewController];
         }
             break;
         case 1:{
-            ContainerViewController * containerViewController = [[ContainerViewController alloc]init];
-            NSMutableArray *tmpArray = [NSMutableArray array];
-            
-            for (int i=0; i<5; i++){
-                PageViewController *page = [[PageViewController alloc] init];
-                [tmpArray addObject:page];
-            }
-            AnimationCellViewController *animationCellViewController = [[AnimationCellViewController alloc] init];
-            //            animationCellViewController.tableView.frame = CGRectMake(10, 110, MAINSCREENWIDTH - 20, MAINSCREENHEIGHT - 110*2);
-            [tmpArray addObject:animationCellViewController];
-            
-            // set these as sub VCs
-            [containerViewController setSubViewControllers:tmpArray];
-            
-            [self.navigationController pushViewController:containerViewController animated:YES];
+            [self pushToContainerViewController];
         }
             break;
         case 2:{
-            UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-            ZYImageTableViewController *zyvc = (ZYImageTableViewController*)[storyboard instantiateViewControllerWithIdentifier:@"ZYImageTableViewController"];
-            [self.navigationController pushViewController:zyvc animated:YES];
+            [self pushToZYImageTableViewController];
         }
             break;
         case 3:{
-            UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-            AutolayoutScrollViewController *autolayoutScrollView = (AutolayoutScrollViewController*)[storyboard instantiateViewControllerWithIdentifier:@"AutolayoutScrollViewController"];
-            [self.navigationController pushViewController:autolayoutScrollView animated:YES];
+            [self pushToAutolayoutScrollViewController];
         }
             break;
         case 4:{
-            ZYScrollViewController *scrollViewController = [[ZYScrollViewController alloc]init];
-            [self.navigationController pushViewController:scrollViewController animated:YES];
+            [self pushToZYScrollViewController];
         }
             break;
+        case 5:{
+            [self addHADirect];
+        }
+            break;
+            
         default:
             break;
     }
@@ -112,48 +100,70 @@
     
     return 60;
 }
-/*
- // Override to support conditional editing of the table view.
- - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
- // Return NO if you do not want the specified item to be editable.
- return YES;
- }
- */
 
-/*
- // Override to support editing the table view.
- - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
- if (editingStyle == UITableViewCellEditingStyleDelete) {
- // Delete the row from the data source
- [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
- } else if (editingStyle == UITableViewCellEditingStyleInsert) {
- // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
- }
- }
- */
+#pragma mark - clicked methods
 
-/*
- // Override to support rearranging the table view.
- - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
- }
- */
+- (void)pushToZYViewController {
+    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    ZYViewController *zyvc = (ZYViewController*)[storyboard instantiateViewControllerWithIdentifier:@"ZYViewController"];
+    [self.navigationController pushViewController:zyvc animated:YES];
+}
 
-/*
- // Override to support conditional rearranging of the table view.
- - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
- // Return NO if you do not want the item to be re-orderable.
- return YES;
- }
- */
+- (void)pushToContainerViewController {
+    ContainerViewController * containerViewController = [[ContainerViewController alloc]init];
+    NSMutableArray *tmpArray = [NSMutableArray array];
+    
+    for (int i=0; i<5; i++){
+        PageViewController *page = [[PageViewController alloc] init];
+        [tmpArray addObject:page];
+    }
+    AnimationCellViewController *animationCellViewController = [[AnimationCellViewController alloc] init];
+    //            animationCellViewController.tableView.frame = CGRectMake(10, 110, MAINSCREENWIDTH - 20, MAINSCREENHEIGHT - 110*2);
+    [tmpArray addObject:animationCellViewController];
+    
+    // set these as sub VCs
+    [containerViewController setSubViewControllers:tmpArray];
+    
+    [self.navigationController pushViewController:containerViewController animated:YES];
+}
 
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
+- (void)pushToZYImageTableViewController {
+    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    ZYImageTableViewController *zyvc = (ZYImageTableViewController*)[storyboard instantiateViewControllerWithIdentifier:@"ZYImageTableViewController"];
+    [self.navigationController pushViewController:zyvc animated:YES];
+}
+
+- (void)pushToAutolayoutScrollViewController {
+    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    AutolayoutScrollViewController *autolayoutScrollView = (AutolayoutScrollViewController*)[storyboard instantiateViewControllerWithIdentifier:@"AutolayoutScrollViewController"];
+    [self.navigationController pushViewController:autolayoutScrollView animated:YES];
+}
+
+- (void)pushToZYScrollViewController {
+    ZYScrollViewController *scrollViewController = [[ZYScrollViewController alloc]init];
+    [self.navigationController pushViewController:scrollViewController animated:YES];
+}
+
+- (void)addHADirect {
+    static int i = 0;
+    if (i%2 == 0) {
+        _direct = [HADirect direcWithtFrame:CGRectMake(100, 100, 200, 250)
+                                            ImageArr:@[
+                                                       @"background.jpg",
+                                                       @"cat@2x",
+                                                       @"Default-568h@2x",
+                                                       @"image2.jpg"
+                                                       ]
+                                  AndImageClickBlock:^(NSInteger index) {
+                                      NSLog(@"AndImageClickBlock:%ld",(long)index);
+                                      [_direct removeFromSuperview];
+                                  }];
+        _direct.tag = 1111;
+        [[UIApplication sharedApplication].keyWindow addSubview:_direct];
+    } else {
+        [[[UIApplication sharedApplication].keyWindow viewWithTag:1111] removeFromSuperview];
+    }
+    i ++;
+}
 
 @end

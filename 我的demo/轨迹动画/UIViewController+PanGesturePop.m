@@ -10,7 +10,7 @@
 
 @implementation UIViewController (PanGesturePop)
 
--(void)addPanGesturePopVC{
+-(void)addPanGesturePopVC {
     
     // 获取系统自带滑动手势的target对象
     id target = self.navigationController.interactivePopGestureRecognizer.delegate;
@@ -28,16 +28,14 @@
     }
 }
 
--(void)handleNavigationTransition:(id)target{
+-(void)handleNavigationTransition:(id)target {
     //仅用于消除警告，实际target 调用的是_UINavigationInteractiveTransition 里的handleNavigationTransition:方法
-    
 }
 
 
 // 什么时候调用：每次触发手势之前都会询问下代理，是否触发。
 // 作用：拦截手势触发
-- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
-{
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
     // 注意：只有非根控制器才有滑动返回功能，根控制器没有。
     // 判断导航控制器是否只有一个子控制器，如果只有一个子控制器，肯定是根控制器
     if (self.navigationController.childViewControllers.count == 1) {

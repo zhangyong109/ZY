@@ -15,6 +15,7 @@
 
 @interface ZYViewController (){
     NSTimer * checkShakeTimer;//检测震动
+    ColorGradientView *progressView;
 
 }
 
@@ -29,7 +30,9 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithRed:0.6 green:0.8 blue:0.9 alpha:1];
     self.navigationItem.title = @"测试";
-    
+
+    [self addProgressView];
+
     [self addPanGesturePopVC];
     
     WMHamburgerButton * wm = [[WMHamburgerButton alloc]initWithFrame:CGRectMake(10, 320, 30, 30)];
@@ -45,6 +48,47 @@
     str2 = @"wwww".lowercaseString;
     NSLog(@"--%@--%@",str1,str2);
 }
+
+- (void)viewDidAppear:(BOOL)animated {
+    
+    [super viewDidAppear:animated];
+    
+    // Starts the moving gradient effect
+    [progressView startAnimating];
+    
+    // Continuously updates the progress value using random values
+    [self simulateProgress];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [progressView stopAnimating];
+}
+
+#pragma mark - 
+- (void)addProgressView {
+    //颜色 渐变 view
+    progressView = [[ColorGradientView alloc]initWithFrame:CGRectMake(0, 65.0f, CGRectGetWidth([[self view] bounds]), 5.0f)];
+    progressView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:progressView];
+}
+
+- (void)simulateProgress {
+    
+    double delayInSeconds = 2.0;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        
+        CGFloat increment = (arc4random() % 5) / 10.0f + 0.1;
+        CGFloat progress  = [progressView progress] + increment;
+        [progressView setProgress:progress];
+        if (progress < 1.0) {
+            
+            [self simulateProgress];
+        }
+    });
+}
+
 
 #pragma mark - method
 -(void)downloadedImage{
