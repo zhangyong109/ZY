@@ -133,7 +133,7 @@ class LearnSwift: UIViewController {
         print(firstForLoop, terminator: "")
         
         var secondForLoop = 0
-        for var i = 0; i < 4; ++i {
+        for i in 0 ..< 4 {
             secondForLoop += i
         }
         print(secondForLoop, terminator: "")

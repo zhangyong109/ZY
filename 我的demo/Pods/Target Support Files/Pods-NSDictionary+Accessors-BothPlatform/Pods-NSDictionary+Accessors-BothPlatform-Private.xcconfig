@@ -1,6 +1,0 @@
-#include "Pods-NSDictionary+Accessors-BothPlatform.xcconfig"
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/NSDictionary+Accessors-BothPlatform" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/MBProgressHUD" "${PODS_ROOT}/Headers/Public/NSDictionary+Accessors-BothPlatform" "${PODS_ROOT}/Headers/Public/SDWebImage"
-OTHER_LDFLAGS = ${PODS_NSDICTIONARY_ACCESSORS_BOTHPLATFORM_OTHER_LDFLAGS} -ObjC
-PODS_ROOT = ${SRCROOT}
-SKIP_INSTALL = YES

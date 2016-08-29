@@ -20,6 +20,7 @@
 
 @implementation RootViewController
 
+#pragma mark -
 - (void)viewDidLoad {
     
     [super viewDidLoad];
@@ -31,6 +32,42 @@
     [self initViews];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    
+    self.imageView.hidden = YES;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    
+    [super viewDidAppear:animated];
+    
+    // 关闭手势
+    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    
+    self.navigationController.delegate = self;
+    
+    self.imageView.hidden = NO;
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    
+    [super viewWillDisappear:animated];
+    
+    self.imageView.hidden = YES;
+    self.navigationController.delegate = nil;//不设为 nil 返回后再进会崩
+    
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    
+    [super viewDidDisappear:animated];
+    
+    // 激活手势
+    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+}
+#pragma mark -
 - (BOOL)prefersStatusBarHidden{
     return NO; // 返回NO表示要显示，返回YES将hiden
 }
@@ -85,42 +122,5 @@
     }
 }
 
-#pragma mark -
-
-- (void)viewWillAppear:(BOOL)animated {
-    
-    [super viewWillAppear:animated];
-    
-    self.imageView.hidden = YES;
-}
-
-- (void)viewDidAppear:(BOOL)animated {
-    
-    [super viewDidAppear:animated];
-    
-    // 关闭手势
-    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
-    
-    self.navigationController.delegate = self;
-    
-    self.imageView.hidden = NO;
-}
-
-- (void)viewWillDisappear:(BOOL)animated {
-    
-    [super viewWillDisappear:animated];
-    
-    self.imageView.hidden = YES;
-    self.navigationController.delegate = nil;//不设为 nil 返回后再进会崩
-
-}
-
-- (void)viewDidDisappear:(BOOL)animated {
-
-    [super viewDidDisappear:animated];
-    
-    // 激活手势
-    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
-}
 
 @end

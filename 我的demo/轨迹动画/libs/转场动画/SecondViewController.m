@@ -32,6 +32,7 @@ typedef enum : NSUInteger {
 
 @implementation SecondViewController
 
+#pragma mark -
 - (void)viewDidLoad {
     
     [super viewDidLoad];
@@ -41,6 +42,35 @@ typedef enum : NSUInteger {
     [self initViews];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    
+    self.imageView.hidden = YES;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    
+    [super viewDidAppear:animated];
+    
+    self.imageView.hidden = NO;
+    
+    self.navigationController.delegate = self;
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    
+    [super viewWillDisappear:animated];
+    
+    self.imageView.hidden = YES;
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    
+    [super viewDidDisappear:animated];
+}
+
+#pragma mark -
 - (void)setup {
     
     self.view.backgroundColor = [UIColor blackColor];
@@ -147,7 +177,7 @@ typedef enum : NSUInteger {
     
     if ([animationController isKindOfClass:[PopAnimator class]]) {
         return self.percentDrivenTransition;
-    }else{
+    } else {
         return nil;
     }
 }
@@ -160,8 +190,7 @@ typedef enum : NSUInteger {
     return [PresentAnimator new];
 }
 
-- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
-{
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
     DismissAnimator *dismissAnimator   = [DismissAnimator new];
     dismissAnimator.transitionDuration = 1.f;
     
@@ -169,33 +198,6 @@ typedef enum : NSUInteger {
     return dismissAnimator;
 }
 
-#pragma mark -
-- (void)viewWillAppear:(BOOL)animated {
-    
-    [super viewWillAppear:animated];
-    
-    self.imageView.hidden = YES;
-}
 
-- (void)viewDidAppear:(BOOL)animated {
-    
-    [super viewDidAppear:animated];
-    
-    self.imageView.hidden = NO;
-    
-    self.navigationController.delegate = self;
-}
-
-- (void)viewWillDisappear:(BOOL)animated {
-    
-    [super viewWillDisappear:animated];
-    
-    self.imageView.hidden = YES;
-}
-
-- (void)viewDidDisappear:(BOOL)animated {
-    
-    [super viewDidDisappear:animated];
-}
 
 @end

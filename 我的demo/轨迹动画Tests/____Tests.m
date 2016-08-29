@@ -29,25 +29,7 @@
     // This is an example of a functional test case.
     XCTAssert(YES, @"Pass");
 }
-- (void)testTrue2 {
-    NSLog(@"2222222222222222222222");
-    XCTAssert(1, @"Can not be zero");
-}
 
-- (void)testTrue1 {
-    NSLog(@"1111111111111111111111");
-    XCTAssert(1, @"Can not be zero");
-}
-
-- (void)testTrue3 {
-    NSLog(@"3333333333333333333333");
-    XCTAssert(1, @"Can not be zero");
-}
-
-- (void)testAtrue {
-    NSLog(@"0000000000000000000000");
-    XCTAssert(1, @"Can not be zero");
-}
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
     [self measureBlock:^{

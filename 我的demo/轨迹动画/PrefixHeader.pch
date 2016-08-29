@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  轨迹动画
+//
+//  Created by ZY on 16/8/29.
+//  Copyright © 2016年 ZY. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//主要用于 blocks 防止循环引用
+#define ZYWeakSelf(type)  __weak typeof(type) weak##type = type;
+#define ZYStrongSelf(type)  __strong typeof(type) type = weak##type;
+
+
+
+
+#endif /* PrefixHeader_pch */

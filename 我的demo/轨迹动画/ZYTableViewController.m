@@ -28,7 +28,8 @@
                    @"ZYImageTableViewController",
                    @"AutolayoutScrollView",
                    @"ZYScrollViewController",
-                   @"HADirect-图片轮播"
+                   @"HADirect-图片轮播",
+                   @"测试TableView"
                    ];
 }
 

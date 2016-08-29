@@ -20,6 +20,11 @@ PODS:
   - AFNetworking/UIKit (2.6.0):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - FMDB (2.5):
+    - FMDB/standard (= 2.5)
+  - FMDB/common (2.5)
+  - FMDB/standard (2.5):
+    - FMDB/common
   - MBProgressHUD (0.9.1)
   - NSDictionary+Accessors-BothPlatform (1.1.0)
   - SDWebImage (3.7.3):
@@ -28,14 +33,16 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - FMDB (~> 2.5)
   - MBProgressHUD (~> 0.8)
   - NSDictionary+Accessors-BothPlatform (~> 1.1.0)
   - SDWebImage (~> 3.7.3)
 
 SPEC CHECKSUMS:
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
+  FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   NSDictionary+Accessors-BothPlatform: be7eaf1d64ae55e88e050141f0495d45246adb6e
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.39.0

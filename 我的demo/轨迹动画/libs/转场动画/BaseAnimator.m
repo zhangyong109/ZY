@@ -56,7 +56,7 @@
 
 - (void)animateTransitionEvent {
     
-    /* == 代码示例 ==
+    /* == 代码示例 ==  此处设置默认动画
      
     UIView *tmpView  = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
     [self.containerView addSubview:self.toViewController.view];

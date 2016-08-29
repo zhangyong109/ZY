@@ -10,6 +10,11 @@
 
 @implementation ZYScrollViewController
 
+//http://www.wtoutiao.com/p/I35S1d.html
+//http://ios.jobbole.com/82637/
+
+
+
 #pragma mark - life cycle
 - (void)viewDidLoad{
     
@@ -96,8 +101,14 @@
                                          @"boxView":self.boxView,
                                          @"bottomLabel":self.bottomLabel
                                          };
-    
-    [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(60)-[topLabel]-[boxView(86)]-[bottomLabel]-|" options:0 metrics:nil views:tmpViewsDictionary]];
+    NSDictionary *metrics = @{
+                              @"space":@30,
+                              
+                              };
+    [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(space)-[topLabel]-[boxView(186)]-space-[bottomLabel]-space-|"
+                                                                             options:0
+                                                                             metrics:metrics
+                                                                               views:tmpViewsDictionary]];
     
     [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[topLabel]-|" options:0 metrics:nil views:tmpViewsDictionary]];
     [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[bottomLabel]-|" options:0 metrics:nil views:tmpViewsDictionary]];

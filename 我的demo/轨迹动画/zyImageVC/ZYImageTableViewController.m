@@ -38,8 +38,8 @@
 
 - (void)fetchDataFromServer{
 //    static NSString *apiURL = @"http://image.baidu.com/i?tn=resultjson_com&word=animal&rn=60";
-//    static NSString *apiURL = @"http://image.baidu.com/i?tn=resultjson_com&word=man&rn=60";
-    static NSString *apiURL = @"http://image.baidu.com/i?tn=resultjson_com&word=lion&rn=60";
+    static NSString *apiURL = @"http://image.baidu.com/i?tn=resultjson_com&word=man&rn=60";
+//    static NSString *apiURL = @"http://image.baidu.com/i?tn=resultjson_com&word=lion&rn=60";
 
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager GET:apiURL
@@ -61,7 +61,7 @@
              [self.tableView reloadData];
          }
          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-             NSLog(@"Request falied");
+             NSLog(@"Request falied:%@",error);
          }];
 }
 

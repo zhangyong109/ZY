@@ -48,7 +48,10 @@
     str2 = @"wwww".lowercaseString;
     NSLog(@"--%@--%@",str1,str2);
 }
-
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+}
 - (void)viewDidAppear:(BOOL)animated {
     
     [super viewDidAppear:animated];

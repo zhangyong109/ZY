@@ -17,9 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+ 
     NSDictionary *dic = [UIDevice AppleIncReservedDic:@"1"];
     NSLog(@"dic:%@",dic);
+
     return YES;
 }
 

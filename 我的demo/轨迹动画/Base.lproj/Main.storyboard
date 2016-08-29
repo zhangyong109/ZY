@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jJI-Zj-Cq9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jJI-Zj-Cq9">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -42,7 +42,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="CEG-6B-Swt"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="CEG-6B-Swt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Mu-01-obZ">
@@ -51,7 +51,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="qRq-i1-4xZ" kind="presentation" id="ZZE-5a-Ddg"/>
+                                    <segue destination="qRq-i1-4xZ" kind="show" id="ZZE-5a-Ddg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vb7-OW-2VL">
@@ -60,7 +60,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="MiP-xf-JRG" kind="presentation" id="B5M-K2-pQW"/>
+                                    <segue destination="MiP-xf-JRG" kind="show" id="B5M-K2-pQW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlA-XU-2j1">
@@ -69,7 +69,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Bjd-h8-awh" kind="presentation" id="FSv-ha-EWg"/>
+                                    <segue destination="Bjd-h8-awh" kind="show" id="FSv-ha-EWg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSl-gi-2JZ">
@@ -105,7 +105,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="wDc-8q-Avp" kind="presentation" id="zlv-6k-GUU"/>
+                                    <segue destination="wDc-8q-Avp" kind="show" id="zlv-6k-GUU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSy-vw-PiI">
@@ -114,7 +114,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="EYw-Bc-8lX" kind="presentation" id="0st-WZ-zQ6"/>
+                                    <segue destination="EYw-Bc-8lX" kind="show" id="0st-WZ-zQ6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1d-BP-uvF">
@@ -123,7 +123,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="6df-nA-Y4c" kind="presentation" id="6Ri-EP-xpA"/>
+                                    <segue destination="6df-nA-Y4c" kind="show" id="6Ri-EP-xpA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2Y-rR-KXE">
@@ -132,7 +132,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="pwV-di-Xdk" kind="presentation" id="i02-eg-jdV"/>
+                                    <segue destination="pwV-di-Xdk" kind="show" id="i02-eg-jdV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -162,7 +162,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="gji-aJ-S7O" kind="presentation" id="Z1P-If-tw4"/>
+                                    <segue destination="gji-aJ-S7O" kind="show" id="Z1P-If-tw4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOS-F2-nAJ">
@@ -171,7 +171,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="78d-dA-yw8" kind="presentation" id="jlj-rv-1kr"/>
+                                    <segue destination="78d-dA-yw8" kind="show" id="jlj-rv-1kr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -201,7 +201,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="RAj-Vl-9Rs" kind="presentation" id="C04-4j-SFG"/>
+                                    <segue destination="RAj-Vl-9Rs" kind="show" id="C04-4j-SFG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXN-aP-Jdx">
@@ -210,7 +210,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="FdI-5j-eRb" kind="presentation" id="zrb-C4-Q1r"/>
+                                    <segue destination="FdI-5j-eRb" kind="show" id="zrb-C4-Q1r"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7UW-dl-3vS">
@@ -219,7 +219,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="HJU-3L-YFR" kind="presentation" id="Mrq-HD-wqk"/>
+                                    <segue destination="HJU-3L-YFR" kind="show" id="Mrq-HD-wqk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -342,7 +342,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BBE-6N-PMf" kind="presentation" id="aZa-3b-mG5"/>
+                                    <segue destination="BBE-6N-PMf" kind="show" id="aZa-3b-mG5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zO5-YB-kea">
@@ -554,7 +554,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zOt-VD-V2j" kind="presentation" id="TYe-Hf-N1j"/>
+                                    <segue destination="zOt-VD-V2j" kind="show" id="TYe-Hf-N1j"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="111" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkW-CL-BAT">
@@ -563,7 +563,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zOt-VD-V2j" kind="presentation" id="LDy-Ea-j7E"/>
+                                    <segue destination="zOt-VD-V2j" kind="show" id="LDy-Ea-j7E"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -683,7 +683,7 @@
                     <navigationItem key="navigationItem" title="转场动画和组动画" id="jHc-79-G38">
                         <barButtonItem key="rightBarButtonItem" title="--&gt;" id="xQ1-0P-Udw">
                             <connections>
-                                <segue destination="JMU-tr-cmj" kind="presentation" id="6wH-9e-dhz"/>
+                                <segue destination="JMU-tr-cmj" kind="show" id="6wH-9e-dhz"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -917,7 +917,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0FQ-wY-MER" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1600" y="2120"/>
+            <point key="canvasLocation" x="1242" y="1884"/>
         </scene>
         <!--Draw View Controller-->
         <scene sceneID="F78-yS-NgQ">
@@ -1149,7 +1149,7 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="key" value="choice_2"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="U7o-m1-1Qf" kind="presentation" id="G0o-TY-Oyf"/>
+                                            <segue destination="U7o-m1-1Qf" kind="show" id="G0o-TY-Oyf"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -1208,7 +1208,7 @@
             <objects>
                 <tableViewController id="U7o-m1-1Qf" customClass="BOTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="58" sectionHeaderHeight="10" sectionFooterHeight="10" id="jxq-Le-ygv">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="613"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.95999999999999996" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -1346,13 +1346,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hnv-9y-kMK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="788" y="2120"/>
+            <point key="canvasLocation" x="566" y="1884"/>
         </scene>
     </scenes>
     <resources>
         <image name="图层 1.png" width="1242" height="2208"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TYe-Hf-N1j"/>
+        <segue reference="LDy-Ea-j7E"/>
     </inferredMetricsTieBreakers>
 </document>
