@@ -21,10 +21,10 @@
     CGContextAddEllipseInRect(ctr, rect);
     // 裁剪
     CGContextClip(ctr);
-    // 将图片画上去
-    [self drawInRect:rect];
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
+        // 将图片画上去
+        [self drawInRect:rect];
+        UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
     return image;
 }
 

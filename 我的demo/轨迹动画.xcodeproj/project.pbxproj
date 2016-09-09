@@ -60,12 +60,16 @@
 		EB2509421B783EC900CF86C6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB2509381B783EC900CF86C6 /* Info.plist */; };
 		EB2509451B783ED600CF86C6 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2509441B783ED600CF86C6 /* TableViewController.m */; };
 		EB4F95721CF6DC62005B3419 /* libTelephonyIOKitDynamic.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4F95711CF6DC62005B3419 /* libTelephonyIOKitDynamic.tbd */; };
-		EB81B6B01D73D73900214C79 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EB81B6AF1D73D73900214C79 /* UIImage+Extension.m */; };
 		EB81B6B41D73E5C400214C79 /* ZYPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB81B6B31D73E5C400214C79 /* ZYPlaceholderTextView.m */; };
 		EB856DB91B5F42B50024152C /* ZYBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB856DB81B5F42B50024152C /* ZYBlockViewController.m */; };
 		EB856DC51B5F486B0024152C /* ZYBlock2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB856DC41B5F486B0024152C /* ZYBlock2ViewController.m */; };
 		EB856DCB1B5F83CD0024152C /* ZYImageProcessingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB856DCA1B5F83CD0024152C /* ZYImageProcessingViewController.m */; };
 		EB856DCF1B5F9ADF0024152C /* ZYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB856DCE1B5F9ADF0024152C /* ZYViewController.m */; };
+		EB9499551D82A7A500EC9E90 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = EB94994D1D82A7A500EC9E90 /* UIImage+Color.m */; };
+		EB9499561D82A7A500EC9E90 /* UIImage+Gif.m in Sources */ = {isa = PBXBuildFile; fileRef = EB94994F1D82A7A500EC9E90 /* UIImage+Gif.m */; };
+		EB9499571D82A7A500EC9E90 /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9499511D82A7A500EC9E90 /* UIImage+Rotate.m */; };
+		EB9499581D82A7A500EC9E90 /* UIImage+SubImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9499531D82A7A500EC9E90 /* UIImage+SubImage.m */; };
+		EB94995B1D82A7CE00EC9E90 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EB94995A1D82A7CE00EC9E90 /* UIImage+Extension.m */; };
 		EBA061F51BB393C500D41C0C /* AutolayoutScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA061F41BB393C500D41C0C /* AutolayoutScrollViewController.m */; };
 		EBA061F81BB3C99700D41C0C /* ZYScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA061F71BB3C99700D41C0C /* ZYScrollViewController.m */; };
 		EBA50A391BCCE1110069B112 /* ColorGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA50A381BCCE1110069B112 /* ColorGradientView.m */; };
@@ -212,8 +216,6 @@
 		EB2509431B783ED600CF86C6 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		EB2509441B783ED600CF86C6 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		EB4F95711CF6DC62005B3419 /* libTelephonyIOKitDynamic.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libTelephonyIOKitDynamic.tbd; path = usr/lib/libTelephonyIOKitDynamic.tbd; sourceTree = SDKROOT; };
-		EB81B6AE1D73D73900214C79 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
-		EB81B6AF1D73D73900214C79 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		EB81B6B21D73E5C400214C79 /* ZYPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPlaceholderTextView.h; sourceTree = "<group>"; };
 		EB81B6B31D73E5C400214C79 /* ZYPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYPlaceholderTextView.m; sourceTree = "<group>"; };
 		EB81B6B51D740D0A00214C79 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -225,6 +227,17 @@
 		EB856DCA1B5F83CD0024152C /* ZYImageProcessingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYImageProcessingViewController.m; sourceTree = "<group>"; };
 		EB856DCD1B5F9ADF0024152C /* ZYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYViewController.h; sourceTree = "<group>"; };
 		EB856DCE1B5F9ADF0024152C /* ZYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYViewController.m; sourceTree = "<group>"; };
+		EB94994C1D82A7A500EC9E90 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		EB94994D1D82A7A500EC9E90 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		EB94994E1D82A7A500EC9E90 /* UIImage+Gif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Gif.h"; sourceTree = "<group>"; };
+		EB94994F1D82A7A500EC9E90 /* UIImage+Gif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Gif.m"; sourceTree = "<group>"; };
+		EB9499501D82A7A500EC9E90 /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rotate.h"; sourceTree = "<group>"; };
+		EB9499511D82A7A500EC9E90 /* UIImage+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rotate.m"; sourceTree = "<group>"; };
+		EB9499521D82A7A500EC9E90 /* UIImage+SubImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SubImage.h"; sourceTree = "<group>"; };
+		EB9499531D82A7A500EC9E90 /* UIImage+SubImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SubImage.m"; sourceTree = "<group>"; };
+		EB9499541D82A7A500EC9E90 /* UIImageCategoriesHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageCategoriesHeader.h; sourceTree = "<group>"; };
+		EB9499591D82A7CE00EC9E90 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		EB94995A1D82A7CE00EC9E90 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		EBA061F31BB393C500D41C0C /* AutolayoutScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutolayoutScrollViewController.h; sourceTree = "<group>"; };
 		EBA061F41BB393C500D41C0C /* AutolayoutScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutolayoutScrollViewController.m; sourceTree = "<group>"; };
 		EBA061F61BB3C99700D41C0C /* ZYScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYScrollViewController.h; sourceTree = "<group>"; };
@@ -621,8 +634,7 @@
 			isa = PBXGroup;
 			children = (
 				EB81B6B11D73E5C400214C79 /* 继承 */,
-				EB81B6AE1D73D73900214C79 /* UIImage+Extension.h */,
-				EB81B6AF1D73D73900214C79 /* UIImage+Extension.m */,
+				EB94994B1D82A7A500EC9E90 /* UIImage */,
 			);
 			name = Extensions;
 			path = "轨迹动画/Extensions";
@@ -668,6 +680,24 @@
 				EB072D4E1B539EA300318770 /* TransitionAndGroupAnimationViewController.m */,
 			);
 			name = animations;
+			sourceTree = "<group>";
+		};
+		EB94994B1D82A7A500EC9E90 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				EB9499541D82A7A500EC9E90 /* UIImageCategoriesHeader.h */,
+				EB94994C1D82A7A500EC9E90 /* UIImage+Color.h */,
+				EB94994D1D82A7A500EC9E90 /* UIImage+Color.m */,
+				EB94994E1D82A7A500EC9E90 /* UIImage+Gif.h */,
+				EB94994F1D82A7A500EC9E90 /* UIImage+Gif.m */,
+				EB9499501D82A7A500EC9E90 /* UIImage+Rotate.h */,
+				EB9499511D82A7A500EC9E90 /* UIImage+Rotate.m */,
+				EB9499521D82A7A500EC9E90 /* UIImage+SubImage.h */,
+				EB9499531D82A7A500EC9E90 /* UIImage+SubImage.m */,
+				EB9499591D82A7CE00EC9E90 /* UIImage+Extension.h */,
+				EB94995A1D82A7CE00EC9E90 /* UIImage+Extension.m */,
+			);
+			path = UIImage;
 			sourceTree = "<group>";
 		};
 		EBA50A361BCCE0B90069B112 /* 颜色渐变 */ = {
@@ -1058,12 +1088,12 @@
 				EBB19D1E1B7AD46A0049867D /* UIViewController+PanGesturePop.m in Sources */,
 				EBA061F51BB393C500D41C0C /* AutolayoutScrollViewController.m in Sources */,
 				EB25093F1B783EC900CF86C6 /* BOTableViewController.m in Sources */,
+				EB9499571D82A7A500EC9E90 /* UIImage+Rotate.m in Sources */,
 				EB021A031B67201700A66288 /* MailViewController.m in Sources */,
 				EB021A0D1B67217300A66288 /* TestData.m in Sources */,
 				EB0219F11B670FD400A66288 /* SVPViewController.m in Sources */,
 				EB25093B1B783EC900CF86C6 /* BOOptionTableViewCell.m in Sources */,
 				EBC5FB671B8C03EB002AA151 /* WMHamburgerButton.m in Sources */,
-				EB81B6B01D73D73900214C79 /* UIImage+Extension.m in Sources */,
 				EB021A021B67201700A66288 /* MailTableCell.m in Sources */,
 				EBC2CEA61B7CA025007D0FB1 /* NSTimer+Addition.m in Sources */,
 				EB81B6B41D73E5C400214C79 /* ZYPlaceholderTextView.m in Sources */,
@@ -1071,6 +1101,7 @@
 				EBC2CEA51B7CA025007D0FB1 /* CycleScrollView.m in Sources */,
 				EBAEFE8A1B74361400482F28 /* PictureBrowseViewController.m in Sources */,
 				EB07AF7A1AE6127300FDAFDD /* ViewController.m in Sources */,
+				EB9499581D82A7A500EC9E90 /* UIImage+SubImage.m in Sources */,
 				EB2509451B783ED600CF86C6 /* TableViewController.m in Sources */,
 				EBEC50381B69AB3200B78467 /* RootNavigationViewController.m in Sources */,
 				EBEC503A1B69AB3200B78467 /* UIImageView+Init.m in Sources */,
@@ -1078,6 +1109,7 @@
 				EBA8FBA31B8D557E00E2640F /* Test.m in Sources */,
 				EB0219D91B670E3700A66288 /* SVIndefiniteAnimatedView.m in Sources */,
 				EBEC50361B69AB3200B78467 /* BaseAnimator.m in Sources */,
+				EB9499561D82A7A500EC9E90 /* UIImage+Gif.m in Sources */,
 				EB0219FD1B671FDD00A66288 /* MGSwipeTableCellViewController.m in Sources */,
 				EBEC503F1B69AB3200B78467 /* PushAnimator.m in Sources */,
 				EB2509411B783EC900CF86C6 /* BOTimeTableViewCell.m in Sources */,
@@ -1109,6 +1141,8 @@
 				EB0F513D1BB4DDE200C77678 /* ZYCollectionCell.m in Sources */,
 				EBA061F81BB3C99700D41C0C /* ZYScrollViewController.m in Sources */,
 				EBDEF0791B747D2E005EA5F0 /* ZYDrawViewController.m in Sources */,
+				EB9499551D82A7A500EC9E90 /* UIImage+Color.m in Sources */,
+				EB94995B1D82A7CE00EC9E90 /* UIImage+Extension.m in Sources */,
 				EBC2CE711B7C2897007D0FB1 /* AnimationCellViewController.m in Sources */,
 				EBA91EAA1BBA5C2200836D13 /* SandboxManager.m in Sources */,
 				EB25093C1B783EC900CF86C6 /* BOSetting.m in Sources */,
