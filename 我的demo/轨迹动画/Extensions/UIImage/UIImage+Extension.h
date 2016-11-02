@@ -17,4 +17,6 @@
 //通过图片Data数据第一个字节,获取图片扩展名
 - (NSString *)contentTypeForImageData:(NSData *)data;
 
+
+
 @end
